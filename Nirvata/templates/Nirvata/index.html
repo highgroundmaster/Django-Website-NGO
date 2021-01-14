@@ -1,0 +1,125 @@
+{% extends "Nirvata/base.html" %}
+{% load static %}
+{% block body %}
+
+    <!-- Carousel -->
+    <div id="heroCarousel" class="carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#heroCarousel" data-slide-to="1"></li>
+            <li data-target="#heroCarousel" data-slide-to="2"></li>
+            <li data-target="#heroCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay-image">
+                    <img src="{% static 'Nirvata/images/hero1.jpeg' %}" class="img-responsive" alt="First Slide">
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="animate__animated animate__backInDown">Slide-1</h2>
+                    <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn hero-btn animate__animated animate__backInUp">Read More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="overlay-image">
+                    <img src="{% static 'Nirvata/images/hero.jpg' %}" class="img-responsive" alt="Second Slide">
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="animate__animated animate__backInDown">Slide-2</h2>
+                    <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn hero-btn animate__animated animate__backInUp">Read More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="overlay-image">
+                    <img src="..." class="img-responsive" alt="Third Slide">
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="animate__animated animate__backInDown">Slide-3</h2>
+                    <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn hero-btn animate__animated animate__backInUp">Read More</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="overlay-image">
+                    <img src="..." class="img-responsive" alt="Fourth Slide">
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="animate__animated animate__backInDown">Slide-4</h2>
+                    <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn hero-btn animate__animated animate__backInUp">Read More</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <i class="fas fa-angle-left"></i>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <i class="fas fa-angle-right"></i>
+        </a>
+
+    </div>
+
+    <!-- Testimonials -->
+    <div class="testimonials">
+        <h1 class="Heading">What People Say</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testimonial-slider owl-carousel owl-theme">
+                    {% for testimonial in testimonials %}
+                        <div class="testimonialCard">
+                            <span class="icon fa fa-quote-left"></span>
+                            <p class="description">{{testimonial.description}}</p>
+                            <div class="content">
+                                <div class="pic"><img src={{testimonial.image.url}} class="" alt="Profile Picture"></div>
+                                <h3 class="title Heading">{{testimonial.name}}</h3>
+                                <span class="place">{{testimonial.place}}</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
+
+{% block footer %}
+
+    <script type="text/javaScript">
+        $('.testimonial-slider').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            dots : true,
+            autoplay:true,
+            navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                800:{
+                    items:2
+                },
+                1200:{
+                    items:3
+                }
+            }
+        })
+    </script>
+
+{% endblock footer %}

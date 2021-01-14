@@ -1,0 +1,320 @@
+{% extends "Nirvata/base.html" %}
+{% load static %}
+{% block body %}
+    
+    <!--About Us-->
+    <!-- About Hero -->>
+    <section class="aboutHero">
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Get to know us....</p>
+        </div>
+    </section>
+
+    <!-- Our Beginnings, Vision  -->
+    <div class='Verbose Heading container py-5 mt-5'>
+        <div class='row d-flex align-items-center'>
+            <div class='col-12 col-lg-7'>
+                <h2>Our Beginnings</h2>
+                <p>In 2018, WHO has labelled India as the world’s ‘most depressing country’. Moreover, between 1990 to 2017, one in seven people from India have suffered from mental illness ranging from depression, anxiety to severe conditions such as schizophrenia, according to a study. It is no exaggeration to suggest that the country is under a mental health epidemic. </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis rem sequi quasi, non quos enim dicta accusamus, exercitationem quam necessitatibus, fugiat esse error! Exercitationem qui distinctio nemo, accusamus illo excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, culpa autem quis iure omnis ratione! Ipsam iure sapiente, fuga beatae consequatur quia laborum quod! Illo dolores molestiae perspiciatis atque deleniti.</p>
+            </div>
+
+            <div class='col-12 col-lg-5 p-0'>
+                <img class='col-12 m-lg-2' style='margin-bottom: 1rem !important;' src="{% static 'Nirvata/images/about1.jpeg' %}"
+                    alt='Our Beginnings Photo'>
+            </div>
+        </div>
+        <div class='row d-flex align-items-center'>
+            <div class='col-12 col-lg-6'>
+                <h2>Our Vision</h2>
+                <p>Nirvata endeavours to Improve the community’s understanding of mental health and the mind-body connection between mental and physical health. Our vision is ambitious, A society which actively values and supports people on their journey to positive mental health. </p>
+                <p>Our vision is to provide culturally competent, holistic, and wellness focused services that promote children's social-emotional development, prevent development of mental health challenges, and address social-emotional problems that currently exist.</p>
+                <p>Our mission is to create and promote mental health communities by spreading awareness to reduce the stigma  , providing affordable  mental health services across India .</p>
+            </div>
+            
+            <div class='col-12 col-lg-6 order-lg-first'>
+                <img class='col-12 p-0' src="{% static 'Nirvata/images/about2.jpeg' %}" alt='Our Vision Photo'>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services">
+        <h1 class="section-title">Our Services</h1>
+        <div class="services-container">
+
+            <div class="serviceCard">
+                <div class="service-icon">
+                    <i class="fa fa-cutlery"></i>
+                </div>
+                <div class="title">Action against Hunger</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                </div>
+            </div>
+
+            <div class="serviceCard">
+                <div class="service-icon">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="title">Awareness Campaigns</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                </div>
+            </div>
+
+            <div class="serviceCard">
+                <div class="service-icon">
+                    <i class="fa fa-medkit"></i>
+                </div>
+                <div class="title">Mental Health</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                </div>
+            </div>
+
+            <div class="serviceCard">
+                <div class="service-icon">
+                    <i class="fas fa-object-ungroup"></i>
+                </div>
+                <div class="title">Clothing</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                </div>
+            </div>
+
+            <div class="serviceCard">
+                <div class="service-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="title">Education</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                </div>
+            </div>
+
+            <div class="serviceCard">
+                <div class="service-icon">
+                    <i class=" fa fa-handshake-o"></i>
+                </div>
+                <div class="title">Charity</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro, nihil.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Team -->
+    <div class="skewCards">
+        <h1 class=Heading>Meet the Team</h1>
+        <p class="Heading">The Faces of Our Organisation</p>
+        <h3 class="Heading">Founders</h3>
+        <div class="cards owl-carousel owl-theme">
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/cap.jpeg' %}" alt="Captain America">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Captain America</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Captain America is a superhero created by Marvel Comics. He was shown as a supersoldier who
+                            often
+                            fought the Hydra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/thor.jpeg' %}" alt="Thor">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Thor</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Thor Odinson is a superhero appearing in Marvel Comics based on the Norse deity. Asgardian
+                            god of thunder who possesses Mjolnir.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/ironman.jpeg' %}" alt="Iron Man">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Iron Man</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Iron Man is a superhero appearing in Marvel Comics. A business magnate, playboy,
+                            philanthropist, inventor and ingenious scientist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="Heading">Executives</h3>
+        <div class="cards owl-carousel owl-theme">
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/cap.jpeg' %}" alt="Captain America">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Captain America</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Captain America is a superhero created by Marvel Comics. He was shown as a supersoldier who
+                            often
+                            fought the Hydra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/thor.jpeg' %}" alt="Thor">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Thor</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Thor Odinson is a superhero appearing in Marvel Comics based on the Norse deity. Asgardian
+                            god of thunder who possesses Mjolnir.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/ironman.jpeg' %}" alt="Iron Man">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Iron Man</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Iron Man is a superhero appearing in Marvel Comics. A business magnate, playboy,
+                            philanthropist, inventor and ingenious scientist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="Heading">Developers</h3>
+        <div class="cards owl-carousel owl-theme">
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/cap.jpeg' %}" alt="Captain America">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Captain America</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Captain America is a superhero created by Marvel Comics. He was shown as a supersoldier who
+                            often
+                            fought the Hydra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/thor.jpeg' %}" alt="Thor">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Thor</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Thor Odinson is a superhero appearing in Marvel Comics based on the Norse deity. Asgardian
+                            god of thunder who possesses Mjolnir.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="imageBox">
+                    <img class="img-responsive" src="{% static 'Nirvata/images/ironman.jpeg' %}" alt="Iron Man">
+                </div>
+                <div class="details">
+                    <div class="team-info">
+                        <h4>Iron Man</h4>
+                        <p>Avenger</p>
+                    </div>
+                    <div class="team-description">
+                        <p>Iron Man is a superhero appearing in Marvel Comics. A business magnate, playboy,
+                            philanthropist, inventor and ingenious scientist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+{% endblock body %}
+
+{% block footer %}
+
+    <!-- Owl Carousel Setup -->
+    <script type="text/javaScript">
+        $('.skewCards .cards').owlCarousel({
+            
+            margin:0,
+            nav:true,
+            navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+            autoWidth: true,
+            dots : true,
+            pagination : true,
+            responsive:{
+                0:{
+                    loop:true,
+                    autoplay:true,
+                    items:1,
+                    center : true,
+                    nav:false
+                },
+                800:{
+                    loop:true,
+                    autoplay:true,
+                    items:2,
+                    center : true
+                },
+                1400:{
+                    items:3
+                }
+            }
+        })
+    </script>
+
+    <!-- ScrollOut -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: '.Verbose .row',
+            once : true,
+            threshold : 0.5
+        });
+    </script>
+
+{% endblock footer %}

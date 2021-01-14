@@ -1,0 +1,122 @@
+{% extends "Nirvata/base.html" %}
+{% load static %}
+{% block body %}
+
+    <!-- Donate Hero -->
+    <section class="donateHero">
+        <div class="content">
+            <h1>Donate Us</h1>
+            <p>Every Conrtibution Makes Difference</p>
+        </div>
+    </section>
+
+
+    <!-- Donate Carousel -->
+    <div class="donate-carousel">
+        <h1 class="Heading">Featured Campaigns</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="donate-slider owl-carousel owl-theme">
+                    <div class="donateCard">
+                        <div class="imageBox">
+                            <img src="{% static 'Nirvata/images/clothing-donate.jpeg' %}" class="" alt="Clothing">
+                        </div>
+                        <div class="description">
+                            <h3 class="title">Sponsor a Razai for a homeless Person (Rs.500/-)</h3>
+                            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet
+                            sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                            sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis
+                            neque. Praesent.</p>
+                            <a href="#" class="btn">Donate Now</a>
+                        </div>
+                    </div>
+
+                    <div class="donateCard">
+                        <div class="imageBox">
+                            <img src="{% static 'Nirvata/images/clothing-donate.jpeg' %}" class="" alt="Clothing">
+                        </div>
+                        <div class="description">
+                            <h3 class="title">Sponsor a Razai for a homeless Person (Rs.500/-)</h3>
+                            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet
+                            sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                            sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis
+                            neque. Praesent.</p>
+                            <a href="#" class="btn">Donate Now</a>
+                        </div>
+                    </div>
+
+                    <div class="donateCard">
+                        <div class="imageBox">
+                            <img src="{% static 'Nirvata/images/clothing-donate.jpeg' %}" class="" alt="Clothing">
+                        </div>
+                        <div class="description">
+                            <h3 class="title">Sponsor a Razai for a homeless Person (Rs.500/-)</h3>
+                            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet
+                            sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                            sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis
+                            neque. Praesent.</p>
+                            <a href="#" class="btn">Donate Now</a>
+                        </div>
+                    </div>
+
+                    <div class="donateCard">
+                        <div class="imageBox">
+                            <img src="{% static 'Nirvata/images/clothing-donate.jpeg' %}" class="" alt="Clothing">
+                        </div>
+                        <div class="description">
+                            <h3 class="title">Sponsor a Razai for a homeless Person (Rs.500/-)</h3>
+                            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet
+                            sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                            sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis
+                            neque. Praesent.</p>
+                            <a href="#" class="btn">Donate Now</a>
+                        </div>
+                    </div>
+
+                    <div class="donateCard">
+                        <div class="imageBox">
+                            <img src="{% static 'Nirvata/images/clothing-donate.jpeg' %}" class="" alt="Clothing">
+                        </div>
+                        <div class="description">
+                            <h3 class="title">Sponsor a Razai for a homeless Person (Rs.500/-)</h3>
+                            </p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet
+                            sit amet elementum vel, vehicula eget eros. Vivamus arcu metus, mattis sed sagittis at,
+                            sagittis quis neque. Praesent.Vivamus arcu metus, mattis sed sagittis at, sagittis quis
+                            neque. Praesent.</p>
+                            <a href="#" class="btn">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
+
+{% block footer %}
+
+    <!-- Owl Carousel Setup -->
+    <script type="text/javaScript">
+        $('.donate-slider').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:true,
+            dots : true,
+            autoplay:true,
+            navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                800:{
+                    items:2
+                },
+                1200:{
+                    items:3
+                }
+            }
+        })
+    </script>
+
+{% endblock footer %}

@@ -1,0 +1,56 @@
+{% extends "Nirvata/base.html" %}
+{% block body %}
+
+    <!-- Gallery Mainsection -->
+    <div class="gallery">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="column">
+                    {% for photo in photos %}
+                        {% if forloop.counter0|divisibleby:3 %}
+                            <div class="gallery-card">
+                                <img class="img-responsive" src = {{photo.image_url}} />
+                                <div class="details">
+                                    <h3> {{photo.title}} </h3>
+                                    <p>{{photo.description}}</p>
+                                    <h4>{{photo.date|date:"jS M Y"}}</h4>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}   
+                </div>
+
+                <div class="column">
+                    {% for photo in photos %}
+                        {% if forloop.counter0|add:2|divisibleby:3 %}
+                            <div class="gallery-card">
+                                <img class="img-responsive" src = {{photo.image_url}} />
+                                <div class="details">
+                                    <h3> {{photo.title}} </h3>
+                                    <p>{{photo.description}}</p>
+                                    <h4>{{photo.date|date:"jS M Y"}}</h4>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}   
+                </div>
+  
+                <div class="column">
+                    {% for photo in photos %}
+                        {% if forloop.counter0|add:1|divisibleby:3 %}    
+                            <div class="gallery-card">
+                                <img class="img-responsive" src = {{photo.image_url}} />
+                                <div class="details">
+                                    <h3> {{photo.title}} </h3>
+                                    <p>{{photo.description}}</p>
+                                    <h4>{{photo.date|date:"jS M Y"}}</h4>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}   
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

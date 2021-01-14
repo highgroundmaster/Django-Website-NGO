@@ -1,0 +1,40 @@
+{% extends "Nirvata/base.html" %}
+{% load static %}
+{% block body %}
+
+    <!-- Timeline -->
+    <section class="projectTimeline">
+        <h1 class=Heading>Project Timeline</h1>
+        <div class="timeline">
+            {% for project in projects %}
+                <div class="project">
+                    <div class="container">
+                        <div class="imageBox">
+                            <img class="img-responsive" src="{% static 'Nirvata/images/project1.jpeg' %}" alt="Project-1">
+                        </div>
+                        <div class="content">
+                            <h3>{{project.name}}</h3>
+                            <p>{{project.description}}</p>
+                        </div>
+                    </div>
+                    <div class="time">{{project.date|date:"jS F Y"}}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+{% endblock body %}
+
+{% block footer %}
+
+    <!-- ScrollOut -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: '.project',
+            once : true,
+            threshold : 0.5
+        });
+    </script>
+
+{% endblock footer %}
