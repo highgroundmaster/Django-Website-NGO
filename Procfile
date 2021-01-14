@@ -1,0 +1,1 @@
+web: gunicorn Nirvata_Django.wsgi --log-file -
