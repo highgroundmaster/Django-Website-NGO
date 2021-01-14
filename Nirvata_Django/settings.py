@@ -124,6 +124,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'Nirvata/static')
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 STATICFILES_DIRS=[
-    os.pathjoin(BASE_DIR, 'Nirvata/static')
+    os.path.join(BASE_DIR, 'Nirvata/static')
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'Nirvata/static/Nirvata/images')
