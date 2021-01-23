@@ -178,10 +178,11 @@
       
             chk.addEventListener('change', () => {
                 document.body.classList.toggle('dark');
+                footerBorder.classList.toggle('darkMode');
                 for (var heading of headings){
                     heading.classList.toggle('darkText');
                 }
-                footerBorder.classList.toggle('darkMode');   
+                   
             });
         </script>   
     
